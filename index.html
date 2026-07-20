@@ -11,6 +11,36 @@
     <title>Fieldnote Supply — Argos widget demo</title>
   </head>
   <body>
+    <aside class="playground-bar" aria-labelledby="playground-title">
+      <div class="playground-heading">
+        <span class="playground-badge">Live playground</span>
+        <div>
+          <h2 id="playground-title">Argos widget</h2>
+          <p>Paste an active widget ID to test the production embed on this page.</p>
+        </div>
+      </div>
+      <form class="widget-form" id="widget-form" novalidate>
+        <label for="widget-id">Widget ID</label>
+        <div class="widget-form-controls">
+          <input
+            id="widget-id"
+            name="widgetId"
+            type="text"
+            inputmode="text"
+            autocomplete="off"
+            spellcheck="false"
+            aria-describedby="widget-help widget-error"
+            placeholder="01KY0HXPSVMD7HR2RQ5C4RHAP2"
+          />
+          <button type="submit">Load widget</button>
+        </div>
+        <p class="widget-help" id="widget-help">
+          The selected ID stays in the URL, so you can share the exact playground state.
+        </p>
+        <p class="widget-error" id="widget-error" role="alert" hidden></p>
+      </form>
+    </aside>
+
     <header class="site-header">
       <a class="brand" href="#top" aria-label="Fieldnote Supply home">
         <span class="brand-mark">F</span>
@@ -140,11 +170,6 @@
       <span>© <span id="year"></span> Fieldnote Supply</span>
     </footer>
 
-    <script
-      src="https://widget.try-argos.ai/widget.js"
-      async
-      data-widget-id="01KY0HXPSVMD7HR2RQ5C4RHAP2"
-    ></script>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
