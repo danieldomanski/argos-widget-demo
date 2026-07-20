@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A production-style storefront demonstrating the Argos live chat widget."
+    />
+    <meta name="theme-color" content="#f4f0e8" />
+    <title>Fieldnote Supply — Argos widget demo</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Fieldnote Supply home">
+        <span class="brand-mark">F</span>
+        <span>Fieldnote Supply</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#collection">Collection</a>
+        <a href="#story">Our story</a>
+        <a href="#journal">Journal</a>
+      </nav>
+      <button class="bag" type="button" aria-label="Shopping bag">
+        Bag <span>0</span>
+      </button>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Tools for slower weekends</p>
+          <h1 id="hero-title">Pack less.<br />Notice more.</h1>
+          <p class="intro">
+            Thoughtful field gear for short escapes, long walks, and everything worth writing
+            down along the way.
+          </p>
+          <a class="button" href="#collection">Explore the collection</a>
+          <div class="proof" aria-label="Store benefits">
+            <span>Free EU delivery over €75</span>
+            <span>30-day returns</span>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="sun"></div>
+          <div class="mountain mountain-back"></div>
+          <div class="mountain mountain-front"></div>
+          <div class="trail"></div>
+          <div class="product-card floating-card">
+            <span class="product-kicker">Field tested</span>
+            <strong>Trail Journal No. 02</strong>
+            <span>Weatherproof · 160 pages</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="marquee" aria-label="Brand statement">
+        <span>Made to be used</span>
+        <i></i>
+        <span>Built to be repaired</span>
+        <i></i>
+        <span>Designed in Szczecin</span>
+      </section>
+
+      <section class="collection section" id="collection" aria-labelledby="collection-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">The essentials</p>
+            <h2 id="collection-title">For wherever you wander</h2>
+          </div>
+          <a href="#journal">View all gear <span aria-hidden="true">↗</span></a>
+        </div>
+
+        <div class="product-grid">
+          <article class="product">
+            <div class="product-art product-art-journal">
+              <div class="journal-cover"><span>FIELD<br />NOTES</span></div>
+            </div>
+            <div class="product-meta">
+              <div><h3>Trail Journal</h3><p>Stone</p></div>
+              <strong>€24</strong>
+            </div>
+          </article>
+
+          <article class="product">
+            <div class="product-art product-art-bottle">
+              <div class="bottle"><span>F/S</span></div>
+            </div>
+            <div class="product-meta">
+              <div><h3>Day Flask</h3><p>Moss · 750 ml</p></div>
+              <strong>€38</strong>
+            </div>
+          </article>
+
+          <article class="product">
+            <div class="product-art product-art-pack">
+              <div class="pack"><span>FIELDNOTE</span></div>
+            </div>
+            <div class="product-meta">
+              <div><h3>Roamer Pack</h3><p>Ochre · 18 L</p></div>
+              <strong>€119</strong>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="story section" id="story" aria-labelledby="story-title">
+        <div class="story-visual" aria-hidden="true">
+          <span class="story-number">54°21'N</span>
+          <div class="story-ridge"></div>
+        </div>
+        <div class="story-copy">
+          <p class="eyebrow">Our point of view</p>
+          <h2 id="story-title">Good gear disappears into the day.</h2>
+          <p>
+            We make simple objects that earn their place in your pack. Fewer features, honest
+            materials, and no reason to leave them on the shelf.
+          </p>
+          <a href="#journal">Read our story <span aria-hidden="true">→</span></a>
+        </div>
+      </section>
+
+      <section class="journal section" id="journal" aria-labelledby="journal-title">
+        <p class="eyebrow">From the field</p>
+        <h2 id="journal-title">The quiet route is usually the good one.</h2>
+        <p>
+          Small guides to nearby places, practical packing, and making more room for the walk
+          itself.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand" href="#top">
+        <span class="brand-mark">F</span>
+        <span>Fieldnote Supply</span>
+      </a>
+      <p>Demo storefront built to show the Argos live chat widget in a real host page.</p>
+      <span>© <span id="year"></span> Fieldnote Supply</span>
+    </footer>
+
+    <div class="widget-notice" id="widget-notice" hidden>
+      Argos widget ID is not configured. Add <code>VITE_ARGOS_WIDGET_ID</code> in Vercel or use
+      <code>?widgetId=…</code> for a temporary preview.
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
